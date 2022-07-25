@@ -7,7 +7,7 @@ body {
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     padding: 30px;
     margin-top: 20px;
@@ -15,7 +15,7 @@ body {
 
 .flex-container-columns {
     display: flex;
-    
+
     /* Properti pendukung */
     flex-direction: column;
     max-width: 800px;
@@ -56,14 +56,49 @@ body {
     font-size: 2em;
 }
 
-.operator,.negatif,.equals {
+.operator,
+.negatif,
+.equals {
     background: orange;
 }
+
+.history {
+    width: 80%;
+    margin: 30px auto 0 auto;
+    overflow: scroll;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    text-align: center;
+    padding: 16px;
+}
+
+th {
+    background-color: orange;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #d2d2d2;
+}
+
 
 
 /* Responsive */
 @media screen and (max-width: 513px) {
     .button {
         padding: 10px;
+    }
+
+    .history {
+        width: 100%;
     }
 }
