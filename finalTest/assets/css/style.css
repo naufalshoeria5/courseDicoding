@@ -50,6 +50,7 @@ nav {
   padding: 0.5rem;
   position: static;
   top: 0;
+  border-radius: 0.5rem;
 }
 
 nav a {
@@ -79,10 +80,10 @@ main {
 .flex-row {
   display: flex;
   flex-direction: row;
-  border: 2px solid black;
   padding: 1.5rem;
   border-radius: 10px;
   margin: 0 auto;
+  gap: 1rem;
 }
 
 .flex-columns {
@@ -91,6 +92,7 @@ main {
 }
 #content {
   flex-grow: 3;
+  width: 60%;
 }
 
 .card {
@@ -100,14 +102,52 @@ main {
   margin-top: 20px;
 }
 .box {
-  /* properti lainnya */
-  background-color: #fbdd1c;
   margin: 5px;
-  border: 2px solid black;
   border-radius: 10px;
 }
+
+.visi {
+  background-image: url("../image/background-visi.png");
+  background-position-x: center;
+  background-position-y: bottom;
+  background-size: initial;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: rgb(246, 248, 250);
+}
+/* Aside */
 
 aside {
   flex-grow: 1;
 }
+
+.sticky-top {
+  position: sticky;
+  top: 0;
+  text-align: center;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  background-color: #f9f7f7;
+}
+
+figure > img {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 10px;
+}
+/* End Aside */
 /* Css End Emelent Tengah */
+
+/* Footer */
+footer {
+  padding: 10px;
+  background-color: #3f72af;
+  margin: 0;
+  color: #f9f7f7;
+}
+/* End Footer */

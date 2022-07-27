@@ -11,7 +11,12 @@
     <!-- Header -->
     <header>
       <div class="jumbotron">
-        <h1 id="iconDicoding">Dicoding</h1>
+        <h1
+          id="iconDicoding"
+          style="position: -webkit-sticky; position: sticky; top: 0"
+        >
+          Dicoding
+        </h1>
         <p>Belajar Dasar Pemrograman Web</p>
         <nav>
           <ul>
@@ -28,24 +33,22 @@
     <main>
       <div class="flex-row">
         <!-- Content -->
-        <div id="content" class="flex-columns" style="border: 1px solid">
-          <article class="box card">
-            <h2>Sejarah</h2>
-            <img
-              class="featured-image"
-              src="assets/image/history.jpg"
-              alt="sejarah"
-            />
+        <div id="content" class="flex-columns">
+          <article class="box card visi">
+            <h2>Visi</h2>
+            <h4>Letter From Our CEO</h4>
             <p>
-              Kata Bandung berasal dari kata bendung atau bendungan karena
-              terbendungnya sungai Citarum oleh lava Gunung Tangkuban Parahu
-              yang lalu membentuk telaga. Legenda yang diceritakan oleh
-              orang-orang tua di Bandung mengatakan bahwa nama Bandung diambil
-              dari sebuah kendaraan air yang terdiri dari dua perahu yang diikat
-              berdampingan yang disebut perahu bandung yang digunakan oleh
-              Bupati Bandung, R.A. Wiranatakusumah II, untuk melayari Ci Tarum
-              dalam mencari tempat kedudukan kabupaten yang baru untuk
-              menggantikan ibu kota yang lama di Dayeuhkolot.
+              Visi dicoding adalah menjadi platform edukasi teknologi terdepan
+              yang mendorong akses literasi digital yang lebih luas untuk semua.
+              Dicoding memiliki misi untuk mengakselerasi transisi Indonesia
+              menuju dunia digital melalui pendidikan teknologi yang
+              mentransformasi kehidupan. Kini semua bangsa bergerak menuju dunia
+              digital yang bertumpu pada inovasi teknologi di semua sendi
+              kehidupan. Kami yakin pendidikan teknologi adalah fondasi bagi
+              setiap bangsa agar menjadi yang terdepan dalam menghadapi dunia
+              digital. Dicoding hadir sebagai platform pendidikan teknologi yang
+              membantu menghasilkan talenta digital berstandar global. Semua
+              demi mengakselerasi Indonesia agar menjadi yang terdepan.
             </p>
             <p>
               Berdasarkan filosofi Sunda, kata Bandung juga berasal dari kalimat
@@ -56,6 +59,32 @@
               maupun benda mati. Sinonim dari banda adalah harta. Indung berarti
               Ibu atau Bumi, disebut juga sebagai Ibu Pertiwi tempat Banda
               berada.
+            </p>
+            <p>Narenda Wicaksono CEO Dicoding</p>
+          </article>
+          <article class="box card">
+            <h2>Geografis</h2>
+            <img
+              class="featured-image"
+              src="assets/image/geografis.jpg"
+              alt="geografis"
+            />
+            <p>
+              Kota Bandung dikelilingi oleh pegunungan, sehingga bentuk
+              morfologi wilayahnya bagaikan sebuah mangkok raksasa, secara
+              geografis kota ini terletak di tengah-tengah provinsi Jawa Barat,
+              serta berada pada ketinggian ±768 m di atas permukaan laut, dengan
+              titik tertinggi di berada di sebelah utara dengan ketinggian 1.050
+              meter di atas permukaan laut dan sebelah selatan merupakan kawasan
+              rendah dengan ketinggian 675 meter di atas permukaan laut.
+            </p>
+
+            <p>
+              Kota Bandung dialiri dua sungai utama, yaitu Sungai Cikapundung
+              dan Sungai Citarum beserta anak-anak sungainya yang pada umumnya
+              mengalir ke arah selatan dan bertemu di Sungai Citarum. Dengan
+              kondisi yang demikian, Bandung selatan sangat rentan terhadap
+              masalah banjir terutama pada musim hujan.
             </p>
           </article>
           <article class="box card">
@@ -112,50 +141,57 @@
         <!-- EndContent -->
 
         <!-- Aside -->
-        <aside class="flex-columns" style="border: 1px solid">
-          <article class="profile card">
-            <header>
-              <h2>Kota Bandung</h2>
-              <p>Kota Kembang Paris van Java</p>
-              <figure>
-                <img src="assets/image/bandung-badge.png" />
-                <figcaption>Lambang</figcaption>
-              </figure>
-            </header>
-            <section>
-              <h3>Informasi Lainya</h3>
-              <table>
-                <tr>
-                  <th>Negara</th>
-                  <td>Indonesia</td>
-                </tr>
-                <tr>
-                  <th>Hari Jadi</th>
-                  <td>25 September 1810</td>
-                </tr>
-                <tr>
-                  <th>Luas Total</th>
-                  <td>167.67 km<sup>2</sup></td>
-                </tr>
-                <tr>
-                  <th>Bahasa Daerah</th>
-                  <td>Sunda</td>
-                </tr>
-                <tr>
-                  <th>Kode Telepon</th>
-                  <td>+62 22</td>
-                </tr>
-              </table>
-            </section>
-          </article>
-        </aside>
+        <div>
+          <aside class="flex-columns sticky-top">
+            <article class="card-profile">
+              <header>
+                <h2>Author</h2>
+                <p>Naufal Hidayah Surya</p>
+                <figure>
+                  <img src="assets/image/naufal_junior_fe.png" />
+                </figure>
+              </header>
+              <section>
+                <h3>Junior Programmer</h3>
+                <table>
+                  <tr>
+                    <th>Negara</th>
+                    <td>Indonesia</td>
+                  </tr>
+                  <tr>
+                    <th>Hari Jadi</th>
+                    <td>05 Agustus 1999</td>
+                  </tr>
+                  <!-- <tr>
+                    <th>Luas Total</th>
+                    <td>167.67 km<sup>2</sup></td>
+                  </tr> -->
+                  <tr>
+                    <th>Bahasa</th>
+                    <td>HTML 5 , CSS, & Javascript</td>
+                  </tr>
+                  <tr>
+                    <th>Email</th>
+                    <td>naufalhidayah17@gmail.com</td>
+                  </tr>
+                </table>
+              </section>
+            </article>
+          </aside>
+        </div>
       </div>
       <!-- Endaside -->
     </main>
     <!-- EndMain -->
 
     <!-- Footer -->
-    <footer style="border: 1px solid"></footer>
+    <footer>
+      <p>
+        Belajar Dasar Pemrograman Web &#169; 2022, Dicoding Academy | Dicoding
+        adalah merek milik PT Presentologics, perusahaan induk dari PT Dicoding
+        Akademi Indonesia.
+      </p>
+    </footer>
     <!-- Endfooter -->
   </body>
 </html>
