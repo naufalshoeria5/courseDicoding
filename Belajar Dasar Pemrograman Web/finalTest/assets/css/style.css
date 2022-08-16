@@ -7,15 +7,54 @@
   box-sizing: border-box;
 }
 
-#iconDicoding {
+.dark-mode-primary {
+  background-color: #222831 !important;
+  color: #eeeeee !important;
+}
+
+.dark-mode-secondary,
+.dark-mode-secondary a {
+  background-color: #393e46 !important;
+  color: #eeeeee !important;
+}
+
+.dark-mode-secondary a:hover {
+  font-weight: bold !important;
+  color: #ffd369 !important;
+}
+
+.dark-mode-third {
+  background-color: #ffd369;
+  color: #222831;
+  font-weight: bold;
+}
+
+#icon-dicoding-dark-mode {
   font-size: 10rem;
   letter-spacing: 1px;
   font-weight: bold;
   background: url("../image/unsplash.jpg");
   -webkit-background-clip: text;
-  background-clip: text;
+  -webkit-text-fill-color: #0c2b4e6e;
+  animation: text 7.5s linear infinite;
+  position: sticky;
+  top: 0;
+}
+
+.icon-dark-mode {
+  -webkit-text-fill-color: #0c2b4e6e !important;
+}
+
+#icon-dicoding {
+  font-size: 10rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+  background: url("../image/unsplash.jpg");
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: text 7.5s linear infinite;
+  position: sticky;
+  top: 0;
 }
 
 @keyframes text {
@@ -25,6 +64,16 @@
   to {
     background-position: 100% 100%;
   }
+}
+
+#button-action {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-weight: 400;
+}
+
+#button-action:hover {
+  font-weight: bold !important;
 }
 
 body {
@@ -57,6 +106,7 @@ nav a {
   font-size: 1.2rem;
   font-weight: 700;
   text-decoration: none;
+  color: #112d4e;
 }
 
 nav a:hover {
@@ -117,7 +167,44 @@ main {
   background-origin: initial;
   background-clip: initial;
   background-color: rgb(246, 248, 250);
+  color: #222831;
 }
+
+.sejarah {
+  background-image: url("../image/home-hero.jpg");
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.flex-test {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row-test {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+.box-test {
+  flex-basis: 20%;
+  border: 2px solid black;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+  background-color: #eeeeee;
+}
+
+.box-test img {
+  object-position: center;
+  object-fit: contain;
+  width: 75px;
+}
+
 /* Aside */
 
 aside {
@@ -131,6 +218,7 @@ aside {
   border-radius: 1rem;
   padding: 0.5rem;
   background-color: #f9f7f7;
+  color: #222831;
 }
 
 figure > img {
@@ -151,3 +239,32 @@ footer {
   color: #f9f7f7;
 }
 /* End Footer */
+
+/* Responsive */
+
+@media screen and (max-width: 1150px) {
+  .flex-row {
+    flex-direction: column !important;
+  }
+  #content,
+  aside {
+    width: 100% !important;
+    padding: 0;
+  }
+
+  table {
+    display: block;
+  }
+
+  table tbody {
+    display: inline-table;
+  }
+
+  #icon-dicoding {
+    font-size: 5rem !important;
+  }
+
+  .box-test img {
+    width: 100%;
+  }
+}
